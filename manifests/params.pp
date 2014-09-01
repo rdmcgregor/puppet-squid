@@ -5,7 +5,7 @@ class squid::params {
   $maximum_object_size_in_memory = '512 KB'
   $memory_replacement_policy = 'lru'
   $cache_replacement_policy = 'lru'
-  $cache_dir = '/var/spool/squid'
+  $cache_dir = '/var/spool/squid3'
   $cache_dir_type = 'ufs'
   $cache_dir_size = 100
   $maximum_object_size = '4096 KB'
