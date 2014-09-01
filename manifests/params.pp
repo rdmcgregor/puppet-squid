@@ -21,7 +21,7 @@ class squid::params {
   case $::operatingsystem {
     ubuntu,debian: {
       $squid_package = 'squid'
-      $squid_service = 'squid'
+      $squid_service = 'squid3'
       $squid_user = 'proxy'
       $squid_group = 'proxy'
     }
