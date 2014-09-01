@@ -325,7 +325,7 @@ cache_replacement_policy <%= @cache_replacement_policy %>
 
 #  TAG: cache_dir
 # Uncomment and adjust the following to add a disk cache directory.
-#cache_dir ufs /var/spool/squid 100 16 256
+#cache_dir ufs /var/spool/squid3 100 16 256
 #
 # Value set by Puppet:
 cache_dir <%= @cache_dir_type %> <%= @cache_dir %> <%= @cache_dir_size %> 16 256
@@ -370,7 +370,7 @@ cache_swap_high <%= @cache_swap_high %>
 
 #  TAG: access_log
 #Default:
-# access_log /var/log/squid/access.log squid
+# access_log /var/log/squid3/access.log squid
 
 #  TAG: icap_log
 #Default:
@@ -379,7 +379,7 @@ cache_swap_high <%= @cache_swap_high %>
 #  TAG: log_access  allow|deny acl acl...
 #Default:
 # none
-cache_store_log /var/log/squid/store.log
+cache_store_log /var/log/squid3/store.log
 
 #  TAG: cache_swap_state
 #Default:
@@ -399,7 +399,7 @@ cache_store_log /var/log/squid/store.log
 
 #  TAG: mime_table
 #Default:
-# mime_table /usr/share/squid/mime.conf
+# mime_table /usr/share/squid3/mime.conf
 
 #  TAG: log_mime_hdrs   on|off
 #Default:
@@ -415,7 +415,7 @@ cache_store_log /var/log/squid/store.log
 
 #  TAG: pid_filename
 #Default:
-# pid_filename /var/run/squid.pid
+# pid_filename /var/run/squid3.pid
 
 #  TAG: log_fqdn    on|off
 #Default:
@@ -442,14 +442,14 @@ log_fqdn <%= @log_fqdn %>
 
 #  TAG: netdb_filename
 #Default:
-# netdb_filename /var/log/squid/netdb.state
+# netdb_filename /var/log/squid3/netdb.state
 
 # OPTIONS FOR TROUBLESHOOTING
 # -----------------------------------------------------------------------------
 
 #  TAG: cache_log
 #Default:
-# cache_log /var/log/squid/cache.log
+# cache_log /var/log/squid3/cache.log
 
 #  TAG: debug_options
 #Default:
@@ -460,7 +460,7 @@ log_fqdn <%= @log_fqdn %>
 # coredump_dir none
 #
 # Core dumps in cache dir
-coredump_dir /var/spool/squid
+coredump_dir /var/spool/squid3
 
 # OPTIONS FOR FTP GATEWAYING
 # -----------------------------------------------------------------------------
@@ -498,15 +498,15 @@ coredump_dir /var/spool/squid
 
 #  TAG: diskd_program
 #Default:
-# diskd_program /usr/lib/squid/diskd
+# diskd_program /usr/lib/squid3/diskd
 
 #  TAG: unlinkd_program
 #Default:
-# unlinkd_program /usr/lib/squid/unlinkd
+# unlinkd_program /usr/lib/squid3/unlinkd
 
 #  TAG: pinger_program
 #Default:
-# pinger_program /usr/lib/squid/pinger
+# pinger_program /usr/lib/squid3/pinger
 
 #  TAG: pinger_enable
 #Default:
@@ -1021,7 +1021,7 @@ snmp_access deny all<% end %>
 
 #  TAG: icon_directory
 #Default:
-# icon_directory /usr/share/squid/icons
+# icon_directory /usr/share/squid3/icons
 
 #  TAG: global_internal_static
 #Default:
@@ -1048,7 +1048,7 @@ snmp_access deny all<% end %>
 
 #  TAG: err_page_stylesheet
 #Default:
-# err_page_stylesheet /etc/squid/errorpage.css
+# err_page_stylesheet /etc/squid3/errorpage.css
 
 #  TAG: err_html_text
 #Default:
@@ -1244,7 +1244,7 @@ snmp_access deny all<% end %>
 
 #  TAG: cache_dns_program
 #Default:
-# cache_dns_program /usr/lib/squid/dnsserver
+# cache_dns_program /usr/lib/squid3/dnsserver
 
 #  TAG: dns_children
 #Default:
