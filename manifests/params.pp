@@ -16,15 +16,21 @@ class squid::params {
   $snmp_port = undef,
   $refresh_pattern = undef,
   $negative_ttl = undef,
-  $user = 'proxy'
-  $group = 'proxy'
+  # Cache peers is an array of cache_peer lines in full
+  # ie: cache_peer proxy.domain.com    parent 3128 3130 
+  $cache_peers = undef,
   case $::operatingsystem{
     ubuntu,debian: {
       $package = 'squid',
       $service_name = 'squid',
+      $squid_user = 'proxy',
+      $squid_group = 'proxy',
     }
     default: {
       $package = 'squid',
       $service_name = 'squid',
-  }
+      $squid_user = 'proxy',
+      $squid_group = 'proxy',
+    }
+
 }

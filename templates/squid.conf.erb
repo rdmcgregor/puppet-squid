@@ -260,6 +260,12 @@ http_port 3128
 #  TAG: cache_peer
 #Default:
 # none
+# Peers below managed by Puppet:
+<% if @cache_peers -%>
+<% @cache_peers.each do |this_peer| -%>
+<%= this_peer %>
+<% end -%>
+<% end -%>
 
 #  TAG: cache_peer_domain
 #Default:
@@ -319,7 +325,7 @@ cache_replacement_policy <%= @cache_replacement_policy %>
 
 #  TAG: cache_dir
 # Uncomment and adjust the following to add a disk cache directory.
-#cache_dir ufs /var/spool/squid3 100 16 256
+#cache_dir ufs /var/spool/squid 100 16 256
 #
 # Value set by Puppet:
 cache_dir <%= @cache_dir_type %> <%= @cache_dir %> <%= @cache_dir_size %> 16 256
@@ -364,7 +370,7 @@ cache_swap_high <%= @cache_swap_high %>
 
 #  TAG: access_log
 #Default:
-# access_log /var/log/squid3/access.log squid
+# access_log /var/log/squid/access.log squid
 
 #  TAG: icap_log
 #Default:
@@ -393,7 +399,7 @@ cache_store_log /var/log/squid/store.log
 
 #  TAG: mime_table
 #Default:
-# mime_table /usr/share/squid3/mime.conf
+# mime_table /usr/share/squid/mime.conf
 
 #  TAG: log_mime_hdrs   on|off
 #Default:
@@ -492,7 +498,7 @@ coredump_dir /var/spool/squid
 
 #  TAG: diskd_program
 #Default:
-# diskd_program /usr/lib/squid3/diskd
+# diskd_program /usr/lib/squid/diskd
 
 #  TAG: unlinkd_program
 #Default:
@@ -1042,7 +1048,7 @@ snmp_access deny all<% end %>
 
 #  TAG: err_page_stylesheet
 #Default:
-# err_page_stylesheet /etc/squid3/errorpage.css
+# err_page_stylesheet /etc/squid/errorpage.css
 
 #  TAG: err_html_text
 #Default:
@@ -1238,7 +1244,7 @@ snmp_access deny all<% end %>
 
 #  TAG: cache_dns_program
 #Default:
-# cache_dns_program /usr/lib/squid3/dnsserver
+# cache_dns_program /usr/lib/squid/dnsserver
 
 #  TAG: dns_children
 #Default:
