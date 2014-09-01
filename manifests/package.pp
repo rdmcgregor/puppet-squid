@@ -13,7 +13,7 @@
 
 
 class squid::package {
-  package { $squid::params::package:
+  package { $squid::params::squid_package:
     ensure => 'present',
   }
 }
