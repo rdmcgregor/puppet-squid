@@ -35,10 +35,6 @@
 #
 # Recommended minimum configuration:
 #
-acl manager proto cache_object
-acl localhost src 127.0.0.1/32<% if @ipv6 %> ::1<% end %>
-acl to_localhost dst 127.0.0.0/8 0.0.0.0/32<% if @ipv6 %> ::1<% end %>
-
 acl localnet src <%= @localnet_src %>
 
 acl SSL_ports port 443
@@ -416,13 +412,6 @@ cache_store_log /var/log/squid3/store.log
 #  TAG: pid_filename
 #Default:
 # pid_filename /var/run/squid3.pid
-
-#  TAG: log_fqdn    on|off
-#Default:
-# log_fqdn off
-#
-# Value set by Puppet:
-log_fqdn <%= @log_fqdn %>
 
 #  TAG: client_netmask
 #Default:

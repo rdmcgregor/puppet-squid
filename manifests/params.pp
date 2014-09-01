@@ -11,7 +11,6 @@ class squid::params {
   $maximum_object_size = '4096 KB'
   $cache_swap_low = 90
   $cache_swap_high = 95
-  $log_fqdn = off
   $cachemgr_passwd = disable
   $visible_hostname = undef
   $snmp_port = undef
