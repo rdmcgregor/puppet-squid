@@ -13,9 +13,9 @@
 
 
 class squid::service {
-  service { $service_name:
+  service { $squid::params::service_name :
     ensure  => 'running',
-    enable  => 'true',
-    require => Package[$package],
+    enable  => true,
+    require => Package[$squid::params::package],
   }
 }

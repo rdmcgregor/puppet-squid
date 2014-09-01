@@ -35,11 +35,10 @@
 #
 # Copyright 2014 Brisbane City Council, unless otherwise noted.
 #
-class squid {
+class squid inherits squid::params {
   include stdlib
-  include squid::params
 
-  anchor { 'squid::begin': } 
+  anchor { 'squid::begin': }
   -> class { 'squid::package': }
   -> class { 'squid::config': }
   ~> class { 'squid::service': }

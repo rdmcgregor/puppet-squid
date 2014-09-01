@@ -17,9 +17,9 @@ class squid::params {
   $refresh_pattern = undef,
   $negative_ttl = undef,
   # Cache peers is an array of cache_peer lines in full
-  # ie: cache_peer proxy.domain.com    parent 3128 3130 
+  # ie: cache_peer proxy.domain.com    parent 3128 3130
   $cache_peers = undef,
-  case $::operatingsystem{
+  case $::operatingsystem {
     ubuntu,debian: {
       $package = 'squid',
       $service_name = 'squid',
