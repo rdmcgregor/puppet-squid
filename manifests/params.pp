@@ -1,5 +1,5 @@
 class squid::params {
-  $localnet_src = '10.0.0.0/8',
+  $localnet_src = "10.0.0.0/8",
   $cache_mem = '256 MB',
   $maximum_object_size_in_memory = '512 KB',
   $memory_replacement_policy = 'lru',
@@ -18,7 +18,7 @@ class squid::params {
   $negative_ttl = undef,
   # Cache peers is an array of cache_peer lines in full
   # ie: cache_peer proxy.domain.com    parent 3128 3130
-  $cache_peers = undef,
+  $cache_peers = undef
   case $::operatingsystem {
     ubuntu,debian: {
       $package = 'squid',
