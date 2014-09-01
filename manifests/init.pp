@@ -36,7 +36,7 @@
 # Copyright 2014 Brisbane City Council, unless otherwise noted.
 #
 class squid (
-  $localnet_src 			= $squid::params::localnet_src, 
+  $allowed_src 				= $squid::params::allowed_src, 
   $cache_mem 				= $squid::params::cache_mem, 
   $maximum_object_size_in_memory 	= $squid::params::maximum_object_size_in_memory, 
   $memory_replacement_policy 		= $squid::params::memory_replacement_policy,
