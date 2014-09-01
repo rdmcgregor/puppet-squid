@@ -4,9 +4,9 @@
   "author": "Russell McGregor",
   "summary": "Deploy and Configure Squid proxy server",
   "license": "Apache 2.0",
-  "source": "",
+  "source": "https://github.com/rdmcgregor/puppet-squid",
   "project_page": null,
-  "issues_url": null,
+  "issues_url": "https://github.com/rdmcgregor/puppet-squid/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
