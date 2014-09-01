@@ -12,7 +12,7 @@
 #
 
 class squid::config {
-  file { '/etc/squid/squid.conf':
+  file { '/etc/squid3/squid.conf':
     ensure  => 'file',
     owner   => 'root',
     group   => 'root',
