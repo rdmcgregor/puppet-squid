@@ -1,6 +1,6 @@
 # == Class: squid
 #
-# Deploy and Configure Sqiud proxy server 
+# Deploy and Configure Sqiud proxy server
 #
 # === Parameters
 #
@@ -29,7 +29,7 @@
 #
 # === Authors
 #
-# Russell McGregor <rdmcgregor@gmail.com>, <russell.mcgregor@brisbane.qld.gov.au>
+# Russell McGregor <rdmcgregor@gmail.com>
 #
 # === Copyright
 #
