@@ -35,9 +35,14 @@
 #
 # Recommended minimum configuration:
 #
-acl allowed_src src <%= @allowed_src %>
+acl allowed_src src <%= @acl_clients %>
 
 acl SSL_ports port 443
+<% if @acl_add_ssl_safe_ports -%>
+<% @acl_add_ssl_safe_ports.each do |this_ssl_port| -%>
+acl SSL_ports port <%= this_ssl_port %>
+<% end -%>
+<% end -%>
 acl Safe_ports port 80      # http
 acl Safe_ports port 21      # ftp
 acl Safe_ports port 443     # https
@@ -48,6 +53,11 @@ acl Safe_ports port 280     # http-mgmt
 acl Safe_ports port 488     # gss-http
 acl Safe_ports port 591     # filemaker
 acl Safe_ports port 777     # multiling http
+<% if @acl_add_safe_ports -%>
+<% @acl_add_safe_ports.each do |this_port| -%>
+acl Safe_ports port <%= this_port %>
+<% end -%>
+<% end -%>
 acl CONNECT method CONNECT<% if @snmp_port %>
 acl snmppublic snmp_community public<% end %>
 

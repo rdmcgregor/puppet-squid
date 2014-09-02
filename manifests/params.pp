@@ -1,6 +1,8 @@
 # Params class
 class squid::params {
-  $allowed_src = undef 
+  $acl_clients = undef
+  $acl_add_safe_ports = undef
+  $acl_add_ssl_safe_ports = undef 
   $cache_mem = '256 MB'
   $maximum_object_size_in_memory = '512 KB'
   $memory_replacement_policy = 'lru'

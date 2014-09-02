@@ -5,7 +5,7 @@
   "summary": "Deploy and Configure Squid proxy server",
   "license": "Apache 2.0",
   "source": "https://github.com/rdmcgregor/puppet-squid",
-  "project_page": null,
+  "project_page": "https://github.com/rdmcgregor/puppet-squid",
   "issues_url": "https://github.com/rdmcgregor/puppet-squid/issues",
   "dependencies": [
     {
