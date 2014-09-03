@@ -5,7 +5,7 @@
 # === Authors
 #
 # Russell McGregor <rdmcgregor@gmail.com>
-#
+# Russell McGregor <russell.mcgregor@brisbane.qld.gov.au>
 # === Copyright
 #
 # Copyright 2014 Brisbane City Council, unless otherwise noted.

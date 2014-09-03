@@ -5,6 +5,7 @@
 # === Authors
 #
 # Russell McGregor <rdmcgregor@gmail.com>
+# Russell McGregor <russell.mcgregor@brisbane.qld.gov.au>
 #
 # === Copyright
 #
