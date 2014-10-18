@@ -19,6 +19,7 @@ class squid::params {
   $refresh_pattern = undef
   $negative_ttl = undef
   $cache_peers = undef
+  $never_direct = undef
   case $::operatingsystem {
     ubuntu,debian: {
       $squid_package = 'squid'
