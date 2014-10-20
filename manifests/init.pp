@@ -30,7 +30,7 @@ class squid (
   $refresh_pattern                = $squid::params::refresh_pattern,
   $negative_ttl                   = $squid::params::negative_ttl,
   $cache_peers                    = $squid::params::cache_peers,
-  $never_direct			  = $sqiud::params::never_direct,
+  $never_direct			  = $squid::params::never_direct,
 ) inherits squid::params {
   include stdlib
 
