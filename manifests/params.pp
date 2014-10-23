@@ -20,6 +20,7 @@ class squid::params {
   $negative_ttl = undef
   $cache_peers = undef
   $never_direct = undef
+  $append_domain = undef
   case $::operatingsystem {
     ubuntu,debian: {
       $squid_package = 'squid'

@@ -1275,6 +1275,11 @@ never_direct allow all
 #  TAG: append_domain
 #Default:
 # none
+<% if @append_domain -%>
+append_domain <%= @append_domain %>
+<% end -%>
+
+
 
 #  TAG: ignore_unknown_nameservers
 #Default:
