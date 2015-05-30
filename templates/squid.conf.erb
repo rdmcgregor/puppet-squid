@@ -377,6 +377,7 @@ cache_swap_high <%= @cache_swap_high %>
 #  TAG: access_log
 #Default:
 # access_log /var/log/squid3/access.log squid
+access_log syslog:local2.info squid
 
 #  TAG: icap_log
 #Default:
@@ -385,7 +386,7 @@ cache_swap_high <%= @cache_swap_high %>
 #  TAG: log_access  allow|deny acl acl...
 #Default:
 # none
-cache_store_log /var/log/squid3/store.log
+cache_store_log syslog:local2.info
 
 #  TAG: cache_swap_state
 #Default:
@@ -449,6 +450,7 @@ cache_store_log /var/log/squid3/store.log
 #  TAG: cache_log
 #Default:
 # cache_log /var/log/squid3/cache.log
+cache_log syslog:local2.info
 
 #  TAG: debug_options
 #Default:
