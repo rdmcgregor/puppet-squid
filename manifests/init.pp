@@ -5,7 +5,6 @@
 # === Authors
 #
 # Russell McGregor <rdmcgregor@gmail.com>
-# Russell McGregor <russell.mcgregor@brisbane.qld.gov.au>
 #
 # === Copyright
 #
@@ -15,8 +14,8 @@ class squid (
   $acl_clients                    = $squid::params::acl_clients,
   $acl_add_safe_ports             = $squid::params::acl_add_safe_ports,
   $acl_add_ssl_safe_ports         = $squid::params::acl_add_ssl_safe_ports,
-  $cache_mem                      = $squid::params::cache_mem, 
-  $maximum_object_size_in_memory  = $squid::params::maximum_object_size_in_memory, 
+  $cache_mem                      = $squid::params::cache_mem,
+  $maximum_object_size_in_memory  = $squid::params::maximum_object_size_in_memory,
   $memory_replacement_policy      = $squid::params::memory_replacement_policy,
   $cache_replacement_policy 	  = $squid::params::cache_replacement_policy,
   $cache_dir                      = $squid::params::cache_dir,
