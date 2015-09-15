@@ -17,7 +17,7 @@ class squid (
   $cache_mem                      = $squid::params::cache_mem,
   $maximum_object_size_in_memory  = $squid::params::maximum_object_size_in_memory,
   $memory_replacement_policy      = $squid::params::memory_replacement_policy,
-  $cache_replacement_policy 	  = $squid::params::cache_replacement_policy,
+  $cache_replacement_policy       = $squid::params::cache_replacement_policy,
   $cache_dir                      = $squid::params::cache_dir,
   $cache_dir_type                 = $squid::params::cache_dir_type,
   $cache_dir_size                 = $squid::params::cache_dir_size,
@@ -30,8 +30,8 @@ class squid (
   $refresh_pattern                = $squid::params::refresh_pattern,
   $negative_ttl                   = $squid::params::negative_ttl,
   $cache_peers                    = $squid::params::cache_peers,
-  $never_direct			  = $squid::params::never_direct,
-  $append_domain		  = $squid::params::append_domain,
+  $never_direct                   = $squid::params::never_direct,
+  $append_domain                  = $squid::params::append_domain,
 ) inherits squid::params {
   include stdlib
 
