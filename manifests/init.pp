@@ -32,6 +32,7 @@ class squid (
   $cache_peers                    = $squid::params::cache_peers,
   $never_direct                   = $squid::params::never_direct,
   $append_domain                  = $squid::params::append_domain,
+  $logformat                      = $squid::params::logformat,
 ) inherits squid::params {
   include stdlib
 

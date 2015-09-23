@@ -103,7 +103,7 @@ http_access deny to_localhost
 # Example rule allowing access from your local networks.
 # Adapt localnet in the ACL section to list your (internal) IP networks
 # from where browsing should be allowed
-http_access allow allowed_src 
+http_access allow allowed_src
 http_access allow localhost
 
 # And finally deny all other access to this proxy
@@ -373,6 +373,10 @@ cache_swap_high <%= @cache_swap_high %>
 #  TAG: logformat
 #Default:
 # none
+<% if @logformat %>
+logformat <%= @logformat %>
+<% end -%>
+
 
 #  TAG: access_log
 #Default:
@@ -1063,7 +1067,7 @@ snmp_access deny all<% end %>
 #Default:
 # none
 
-# OPTIONS INFLUENCING REQUEST FORWARDING 
+# OPTIONS INFLUENCING REQUEST FORWARDING
 # -----------------------------------------------------------------------------
 
 #  TAG: nonhierarchical_direct
