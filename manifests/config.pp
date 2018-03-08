@@ -8,11 +8,11 @@
 #
 # === Copyright
 #
-# Copyright 2014 Brisbane City Council, unless otherwise noted.
+# Copyright 2018 Brisbane City Council, unless otherwise noted.
 #
 
 class squid::config {
-  file { '/etc/squid3/squid.conf':
+  file { '/etc/squid/squid.conf':
     ensure  => 'file',
     owner   => 'root',
     group   => 'root',
